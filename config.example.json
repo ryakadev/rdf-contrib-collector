@@ -1,0 +1,16 @@
+{
+  "app": {
+    "environment": "development",
+    "host": "http://localhost",
+    "port": 8000
+  },
+  "database": {
+    "host": "localhost",
+    "port": 27017,
+    "username": "mongo",
+    "password": "mongo"
+  },
+  "log": {
+    "level": "debug"
+  }
+}
