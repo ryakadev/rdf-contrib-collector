@@ -6,6 +6,7 @@ import (
 )
 
 type UseCase interface {
+	HandleWebhook(event interface{}) error
 }
 
 type usecase struct {

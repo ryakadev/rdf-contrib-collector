@@ -1,0 +1,8 @@
+{
+  "conventionalCommits.scopes": [
+    "Model",
+    "Repo",
+    "Transport",
+    "Config"
+  ]
+}
