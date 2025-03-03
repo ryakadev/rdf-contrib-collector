@@ -12,9 +12,10 @@ type Config struct {
 	Log   LogConfig
 }
 type AppConifg struct {
-	Env  string
-	Host string
-	Port int
+	Env    string
+	Host   string
+	Port   int
+	Secret string
 }
 type MongoConfig struct {
 	Host     string
@@ -35,9 +36,10 @@ func Load() Config {
 
 	return Config{
 		App: AppConifg{
-			Host: viper.GetString("app.host"),
-			Port: viper.GetInt("app.port"),
-			Env:  viper.GetString("app.environtment"),
+			Host:   viper.GetString("app.host"),
+			Port:   viper.GetInt("app.port"),
+			Env:    viper.GetString("app.environtment"),
+			Secret: viper.GetString("app.secret"),
 		},
 		Mongo: MongoConfig{
 			Host:     viper.GetString("database.host"),
